@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="recursos/icono.ico" type="image/ico">
+    <title>Acortar</title>
+</head>
+<body>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+    
+   <div class="container">            
+            <i class="bi bi-link"></i>
+            <h1>Acortador de URL</h1>
+            <label for="originalUrl">Ingresar una URL para acortar :</label>
+            <input type="text" id="originalUrl" placeholder=" ejemplo: https://google.com">
+            <div class="buttons">
+                <button id="reload-btn">Reiniciar</button>
+                <button id="short-btn">Acortar</button>
+            </div>
+            <label for="shortenedUrl">URL acortada :</label>
+            <textarea id="shortenedUrl" rows="3" readonly></textarea>        
+            <button id="copy-btn">Copiar URL</button>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>

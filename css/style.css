@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(137, 109, 220);   
+    overflow: hidden;
+}
+
+.container{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    margin: -25px 0 0 -25px;
+    background: rgb(166, 153, 222);
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: 2px solid #000;
+    text-align: center;
+    min-width: 400px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.container i{
+    font-size: 100px;
+    margin-bottom: 10px;
+    color: rgb(137, 109, 220);
+}
+
+h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: rgb(137, 109, 220);
+    text-shadow: 1px 2px 2px rgb(28, 92, 138);
+}
+
+label{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0;
+    display: block;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #000;    
+    background-color: #D0A4D1;
+    font-weight: 700;
+}
+
+input::placeholder{
+    color: #222;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+button{
+    width: 100%;
+    color: rgb(251, 238, 157);
+    text-shadow: 1px 2px 2px rgb(28, 92, 138);
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: 500;
+    background-color: rgb(137, 109, 220);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+   /* background-color: #000; 
+    color: #fff; */
+
+    background-color: rgb(251, 238, 157);
+    color: rgb(137, 109, 220);
+}
+
+textarea{
+    resize: none;
+}
+
+
+.cloud {
+    width: 250px;   
+    height: 250px;    
+    background-size: 100% 100%;
+    position: absolute;    
+}
+
+.cloud:nth-child(1) {
+    background-image: url(../recursos/nube2.png);
+    animation: movimiento1 70s infinite;    
+}
+
+.cloud:nth-child(2) {
+    margin-top: 120px;
+    background-image: url(../recursos/nube2.png);
+    animation: movimiento2 40s infinite;    
+}
+
+.cloud:nth-child(3) {
+    margin-top: 180px;
+    background-image: url(../recursos/nube2.png);
+    animation: movimiento3 60s infinite;    
+}
+
+.cloud:nth-child(4) {
+    margin-top: 240px;
+    background-image: url(../recursos/nube2.png);
+    animation: movimiento4 100s infinite;    
+}
+
+.cloud:nth-child(5) {
+    margin-top: 300px;
+    background-image: url(../recursos/nube2.png);
+    animation: movimiento5 70s infinite;    
+}
+
+.cloud:nth-child(6) {
+    margin-top: 360px;
+    background-image: url(../recursos/nube2.png);
+    animation: movimiento6 100s infinite;    
+}
+
+.cloud:nth-child(7) {
+    margin-top: 560px;
+    background-image: url(../recursos/nube2.png);
+    animation: movimiento7 70s infinite;    
+}
+
+.cloud:nth-child(8) {
+    margin-top: 760px;
+    background-image: url(../recursos/nube2.png);
+    animation: movimiento7 50s infinite;    
+}
+
+
+@keyframes movimiento1 {
+    from { margin-left: -30%;}
+    to { margin-left: 100%;}
+}
+
+@keyframes movimiento2 {
+    from { margin-left: 100%;} 
+    to { margin-left: -20%;}
+}
+
+@keyframes movimiento3 {
+    from { margin-left: -30%;} 
+    to { margin-left: 100%;}
+}
+
+@keyframes movimiento4 {
+    from { margin-left: -70%;} 
+    to { margin-left: 100%;}
+}
+
+@keyframes movimiento5 {
+    from { margin-left: -30%;} 
+    to { margin-left: 100%;}
+}
+
+@keyframes movimiento6 {
+    from { margin-left: 100%;} 
+    to { margin-left: -40%;}
+}
+
+@keyframes movimiento7 {
+    from { margin-left: 100%;} 
+    to { margin-left: -40%;}
+}
+
+@keyframes movimiento8 {
+    from { margin-left: 100%;} 
+    to { margin-left: -40%;}
+}
